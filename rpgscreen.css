@@ -33,3 +33,7 @@ li:hover {
 table {
 	padding:10px;
 }
+#goodbye {
+	padding:10px;
+	display:none;
+}

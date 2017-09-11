@@ -3,6 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<title>RPG Stuff</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="rpgscreen.css" />
 </head>
 <body>
@@ -12,7 +13,7 @@
 				<li>Attack</li>
 				<li>Magic</li>
 				<li>Guard</li>
-				<li>Run</li>
+				<li id="escape">Run</li>
 			</ul>
 		</div>
 		<div id="sub">
@@ -28,7 +29,19 @@
 				<td>MP: 200</td>
 				</tr>
 			<table>
+			<div id="goodbye">It was nice seeing you!</div>
 		</div>
 	</div>
+	<script>
+		$(function(){
+			$("#escape").click(function(){
+				$("#submenu").hide();
+				$("#goodbye").show();
+				setTimeout(function(){
+					window.location.href = "https://google.com";
+				},2000);
+			});
+		});
+	</script>
 </body>
 </html>
