@@ -1,13 +1,15 @@
 body {background-color:black;}
 #menu {color:white;
 	margin:auto;
+	width:630px;
 	padding:5%;
 }
 #main{
 	border:2px solid white;
 	border-radius: 5px;
 	background-color:blue;
-	width:20%;
+	height:120px;
+	width:120px;
 	float:left;
 }
 li {
@@ -24,6 +26,10 @@ li:hover {
 	border:2px solid white;
 	border-radius: 5px;
 	background-color:blue;
-	width:75%;
+	height:120px;
+	width: 480px;
 	float:right;
+}
+table {
+	padding:10px;
 }
